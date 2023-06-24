@@ -48,11 +48,7 @@ Running on Linux only
 
 Ex_Freebayes_vardb_omicron.vcf:
 
-https://github.com/6110210142/BCFtools_variantdatabase
-
 Ex_bcftools_vardb_omicron.vcf:
-
-https://github.com/6110210142/SARS-CoV-2-Freebayes_variantdatabase
 
 ## Step 6: Downloading workflow, software, and prepare working directory
 
@@ -73,7 +69,7 @@ The VOE is developed based on the python. Therefore, to run VOE, simply type
 
 Window version
 ```bash
-./VOE_window.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output TSV format>]
+python VOE_window.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output TSV format>]
 ```
 Linux version
 ```bash
