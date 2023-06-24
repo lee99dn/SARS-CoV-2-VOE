@@ -46,9 +46,6 @@ https://github.com/6110210142/HAVoC_pipeline
 ## Step 5: Creating variant database
 Running on Linux only
 
-Ex_Freebayes_vardb_omicron.vcf:
-
-Ex_bcftools_vardb_omicron.vcf:
 
 ## Step 6: Downloading workflow, software, and prepare working directory
 
