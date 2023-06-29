@@ -26,7 +26,6 @@ try:
         elif arg == '-h' or arg == '--help':
             print(
                 "Usage:\nVOE_window.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
-os.remove(o)
 except getopt.GetoptError as err:
     print("Error try again")
     print(
@@ -246,7 +245,10 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
         else:
             TP += 1
     Sensitivity = (1 - (FN / (FN + TP))) * 100
+    Output = open(o, "w+")
+    Output.write("Epitope sequence: " + Epitope + " Gene: " + Real_Gene_Name + "\n")
     if Sensitivity == 100:
+        Output.write("Sensitivity = 100.00%")
         print("\n*******************************************\n"
               "                 VOE result"
               "\n*******************************************\n")
@@ -257,14 +259,12 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
         print("\n*******************************************\n"
               "                 VOE result"
               "\n*******************************************\n")
-        Output = open(o, "w+")
-        Output.write("Epitope sequence: " + Epitope + " Gene: " + Real_Gene_Name + "\n")
         Output.write(
             "POS_Genome" + "\t" + "Type" + "\t" + "ALT" + "\t" + "AA_change" + "\t" + "Allele_Count(AC)" + "\t" + "Sample_Count(NS)" + "\t" + "Allele_frequency(AF)" + "\t" + "Chance(%)\n")
         Output.write(Output_Code)
         Output.write("FN:" + str(FN) + "\n")
         Output.write("TP:" + str(TP) + "\n")
-        Output.write("Sensitivity:" + str(round(Sensitivity, 4)))
+        Output.write("Sensitivity:" + str(round(Sensitivity, 4)), "%")
         print("Epitope sequence:", Epitope, " Gene:", Real_Gene_Name)
         print(
             "POS_Genome" + "\t" + "Type" + "\t" + "ALT" + "\t" + "AA_change" + "\t" + "Allele_Count(AC)" + "\t" + "Sample_Count(NS)" + "\t" + "Allele_frequency(AF)" + "\t" + "Chance(%)")
@@ -273,9 +273,10 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
         print("TP=", TP)
         print("Sensitivity=", round(Sensitivity, 4), "%")
         print("Done")
-        Output.close()
+    Output.write("\nVariant database: " + vd) 
     os.remove("BlastResults.txt")
     os.remove("Epitope.fasta")
     os.remove("variant_database.tsv")
+    Output.close()
 else:
     pass
