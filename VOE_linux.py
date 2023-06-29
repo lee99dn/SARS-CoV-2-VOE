@@ -273,7 +273,7 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
         print("TP=", TP)
         print("Sensitivity=", round(Sensitivity, 4), "%")
         print("Done")
-    Output.write("Variant database: " + vd) 
+    Output.write("\nVariant database: " + vd) 
     os.remove("BlastResults.txt")
     os.remove("Epitope.fasta")
     os.remove("variant_database.tsv")
