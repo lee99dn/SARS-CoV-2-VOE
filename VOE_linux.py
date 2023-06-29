@@ -265,7 +265,7 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
         Output.write(Output_Code)
         Output.write("FN:" + str(FN) + "\n")
         Output.write("TP:" + str(TP) + "\n")
-        Output.write("Sensitivity:" + str(round(Sensitivity, 4)))
+        Output.write("Sensitivity:" + str(round(Sensitivity, 4)), "%")
         print("Epitope sequence:", Epitope, " Gene:", Real_Gene_Name)
         print(
             "POS_Genome" + "\t" + "Type" + "\t" + "ALT" + "\t" + "AA_change" + "\t" + "Allele_Count(AC)" + "\t" + "Sample_Count(NS)" + "\t" + "Allele_frequency(AF)" + "\t" + "Chance(%)")
