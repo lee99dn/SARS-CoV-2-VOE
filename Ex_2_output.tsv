@@ -10,4 +10,4 @@ POS_Genome	Type	ALT	AA_change	Allele_Count(AC)	Sample_Count(NS)	Allele_frequency
 FN:942
 TP:69
 Sensitivity:6.8249 %
-Variant database: merged_freebayes.ann.vcf
+Variant database: Example_merged_freebayes.ann.vcf
