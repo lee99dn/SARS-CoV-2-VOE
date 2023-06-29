@@ -30,7 +30,6 @@ except getopt.GetoptError as err:
     print("Error try again")
     print(
         "Usage:\nVOE_linux.py [-h, --help] [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
-os.remove(o)
 if Epitope != "" and vd != "" and bd != "" and o != "":
     print("\n*******************************************\n"
           "         Variant on epitope analysis"
