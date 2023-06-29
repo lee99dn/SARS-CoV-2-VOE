@@ -26,6 +26,7 @@ try:
         elif arg == '-h' or arg == '--help':
             print(
                 "Usage:\nVOE_window.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
+os.remove(o)
 except getopt.GetoptError as err:
     print("Error try again")
     print(
