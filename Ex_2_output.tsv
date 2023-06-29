@@ -1,0 +1,13 @@
+Epitope sequence: APGQTGK Gene: S
+POS_Genome	Type	ALT	AA_change	Allele_Count(AC)	Sample_Count(NS)	Allele_frequency(AF)	Chance(%)
+22802	missense_variant	c.1240C>A	p.Gln414Lys	1.0	1011	0.001	0.0989
+22811	missense_variant	c.1251G>T	p.Lys417Asn	1	1011	0.001	0.0989
+22811	missense_variant	c.1249_1251delAAGinsCAT	p.Lys417His	1	1011	0.001	0.0989
+22811	missense_variant	c.1251G>T	p.Lys417Asn	1	1011	0.001	0.0989
+22812	missense_variant	c.1250_1251delAGinsCT	p.Lys417Thr	1.0	1011	0.001	0.0989
+22812	missense_variant	c.1250_1251delAGinsTT	p.Lys417Ile	1.0	1011	0.001	0.0989
+22813	missense_variant	c.1251G>T	p.Lys417Asn	938.0	1011	0.9278	92.7794
+FN:942
+TP:69
+Sensitivity:6.8249 %
+Variant database: merged_freebayes.ann.vcf
