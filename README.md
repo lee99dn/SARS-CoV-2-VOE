@@ -75,7 +75,7 @@ For example
 ```
 
 ```bash
-./VOE_linux.py -e APGQTGK -v Example_merged_freebayes.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_2_output.tsv
+python VOE_window.py -e APGQTGK -v Example_merged_freebayes.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_2_output.tsv
 ```
 Then the workflow will process automatically.
 The output will be show on the screen and create in TSV format.
