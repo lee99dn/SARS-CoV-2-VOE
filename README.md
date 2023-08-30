@@ -41,8 +41,8 @@ conda install -c bioconda blast
 
 ```bash
 Example Variant database
-Example_merged_BCFtool.ann.vcf
-Example_merged_freebayes.ann.vcf
+BCFtool_variant_database.ann.vcf
+Freebayes_variant_database.ann.vcf
 ```
 
 ## Step 5: Downloading workflow, software, and prepare working directory
@@ -71,10 +71,12 @@ Linux version
 ```
 For example
 ```bash
-./VOE_linux.py -e KLNDLCFTNV -v Example_merged_BCFtool.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
+./VOE_linux.py -e KLNDLCFTNV -v BCFtool_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
+python VOE_window.py -e KLNDLCFTNV -v BCFtool_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
 ```
 
 ```bash
+./VOE_linux.py -e APGQTGK -v Example_merged_freebayes.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_2_output.tsv
 python VOE_window.py -e APGQTGK -v Example_merged_freebayes.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_2_output.tsv
 ```
 Then the workflow will process automatically.
