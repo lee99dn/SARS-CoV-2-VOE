@@ -73,6 +73,7 @@ For example
 ```bash
 ./VOE_linux.py -e KLNDLCFTNV -v BCFtool_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
 ```
+
 ```bash
 python VOE_window.py -e KLNDLCFTNV -v BCFtool_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
 ```
@@ -85,6 +86,7 @@ g Ex_1_output.tsv…]()
 ```bash
 ./VOE_linux.py -e APGQTGK -v Freebayes_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_2_output.tsv
 ```
+
 ```bash
 python VOE_window.py -e APGQTGK -v Freebayes_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_2_output.tsv
 ```
