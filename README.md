@@ -1,6 +1,6 @@
 # VOE: A python code for identifying variant located on epitope of SARS-CoV-2
 
-# Installing VOE
+# Installing VOE (Linux)
 * We recommended running all steps on Linux. However, you can perform some steps on Windows.
 ## Step 1: Installing Miniconda 3
 
@@ -56,12 +56,16 @@ cd SARS-CoV-2-VOE
 
 Then the VOE is ready to use!
 
+# For VOE Windows installation
+
+Do all steps in windows version.
+
 # Running VOE
 
 Put an input file in VCF format to your working directory.
 The VOE is developed based on the python. Therefore, to run VOE, simply type
 
-Window version
+Windows version
 ```bash
 python VOE_window.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output TSV format>]
 ```
