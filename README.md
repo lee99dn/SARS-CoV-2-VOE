@@ -76,16 +76,25 @@ For example
 ```bash
 python VOE_window.py -e KLNDLCFTNV -v BCFtool_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
 ```
-https://github.com/lee99dn/SARS-CoV-2-VOE/blob/main/Ex_1_output.tsv
+
+Output:
+
 Sensitivity:100 %
+
+https://github.com/lee99dn/SARS-CoV-2-VOE/blob/main/Ex_1_output.tsv
+
 ```bash
 ./VOE_linux.py -e APGQTGK -v Freebayes_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_2_output.tsv
 ```
 ```bash
 python VOE_window.py -e APGQTGK -v Freebayes_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_2_output.tsv
 ```
-https://github.com/lee99dn/SARS-CoV-2-VOE/blob/main/Ex_2_output.tsv
+
+Output:
+
 Sensitivity:6.8249 %
+
+https://github.com/lee99dn/SARS-CoV-2-VOE/blob/main/Ex_2_output.tsv
 
 Then the workflow will process automatically.
 The output will be show on the screen and create in TSV format.
