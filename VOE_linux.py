@@ -94,7 +94,6 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
     Start = 0
     Stop = 0
     # For fiding the lowest E_value
-    Min = float('inf')
     Gene_Name = ""
     Real_Gene_Name = ""
     List_Min = list()
