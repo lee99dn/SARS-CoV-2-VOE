@@ -97,6 +97,8 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
     Min = float('inf')
     Gene_Name = ""
     Real_Gene_Name = ""
+    List_Min = list()
+    E_value = 0
     First = 0
     End = 0
     s_start = 0
@@ -118,9 +120,9 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
         if "# " not in line:
             List_line = line.split("\t")
             # Read E-value
-            if float(List_line[2]) < Min:
-                E_value = List_line[2]
-                Min = float(E_value)
+            E_value = float(List_line[2])
+            List_Min.append(E_value)
+    E_value = min(List_Min)
     for line in Read_file:
         if "# " not in line:
             List_line = line.split("\t")
