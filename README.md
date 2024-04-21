@@ -102,3 +102,7 @@ https://github.com/lee99dn/SARS-CoV-2-VOE/blob/main/Ex_2_output.tsv
 
 Then the workflow will process automatically.
 The output will be show on the screen and create in TSV format.
+
+# License
+
+VOE was be released under GPL license and be widely available on GitHub: https://github.com/lee99dn/SARS-CoV-2-VOE.
