@@ -106,3 +106,4 @@ The output will be show on the screen and create in TSV format.
 # License
 
 VOE was be released under GPL license and be widely available on GitHub: https://github.com/lee99dn/SARS-CoV-2-VOE.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11197886.svg)](https://doi.org/10.5281/zenodo.11197886)
