@@ -26,11 +26,11 @@ try:
             o = value
         elif arg == '-h' or arg == '--help':
             print(
-                "Usage:\nVOE_linux.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
+                "Usage:\nVOE_Window.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
 except getopt.GetoptError as err:
     print("Error try again")
     print(
-        "Usage:\nVOE_linux.py [-h, --help] [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
+        "Usage:\nVOE_Window.py [-h, --help] [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
 if Epitope != "" and vd != "" and bd != "" and o != "":
     print("\n*******************************************\n"
           "         Variant on epitope analysis"
