@@ -1,4 +1,5 @@
-# Programmer: Mr.Danusorn Lee
+#!/usr/bin/env python3
+#Developer: Danusorn Lee
 import pandas as pd
 import subprocess
 import os
@@ -25,11 +26,11 @@ try:
             o = value
         elif arg == '-h' or arg == '--help':
             print(
-                "Usage:\nVOE_window.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
+                "Usage:\nVOE_linux.py [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
 except getopt.GetoptError as err:
     print("Error try again")
     print(
-        "Usage:\nVOE_window.py [-h, --help] [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
+        "Usage:\nVOE_linux.py [-h, --help] [-e, --epitope <epitope sequence> -v, --variantdatabase <variantdatabase> -b, --blastdatabase <blastdatabase> -o, --output <output> TSV format>]")
 if Epitope != "" and vd != "" and bd != "" and o != "":
     print("\n*******************************************\n"
           "         Variant on epitope analysis"
@@ -97,7 +98,6 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
     Gene_Name = ""
     Real_Gene_Name = ""
     List_Min = list()
-    E_value = 0
     First = 0
     End = 0
     s_start = 0
@@ -126,7 +126,7 @@ if Epitope != "" and vd != "" and bd != "" and o != "":
         if "# " not in line:
             List_line = line.split("\t")
             # Comparing %Identidy with 100, Finding the lowest E_value and query.stop = length of Epitope then Read gene_name
-            if float(List_line[3]) == float(100) and float(List_line[2]) == Min and int(List_line[5]) == len(Epitope):
+            if float(List_line[3]) == float(100) and float(List_line[2]) == E_value and int(List_line[5]) == len(Epitope):
                 Gene_Name = List_line[1]
                 # Read nucleotide position from start to stop of query amino acid sequences
                 s_start = int(List_line[6].strip())
