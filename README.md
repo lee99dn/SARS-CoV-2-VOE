@@ -75,7 +75,7 @@ path/./VOE_linux.py [-e, --epitope <epitope sequence> -v, --variantdatabase <var
 ```
 For example
 ```bash
-path./VOE_linux.py -e KLNDLCFTNV -v BCFtool_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
+path/./VOE_linux.py -e KLNDLCFTNV -v BCFtool_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
 ```
 ```bash
 path/python VOE_window.py -e KLNDLCFTNV -v BCFtool_variant_database.ann.vcf -b db_cds_nucl_covid.fasta -o Ex_1_output.tsv
